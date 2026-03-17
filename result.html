@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parsed Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Parsed Details</h1>
+        <ul>
+            <li><strong>Name:</strong> {{ details.name }}</li>
+            <li><strong>Email:</strong> {{ details.email }}</li>
+            <li><strong>Phone:</strong> {{ details.phone }}</li>
+            <li><strong>Skills:</strong> {{ details.skills }}</li>
+        </ul>
+        <a href="{{ url_for('index') }}">Parse Another Resume</a>
+    </div>
+</body>
+</html>
